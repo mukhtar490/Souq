@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>السوق العربي · Al Souq Al Arabi</title>
+<meta name="description" content="السوق العربي — منصة المشاريع المنزلية والأعمال العربية في أمريكا. حمّل التطبيق من App Store أو Google Play.">
+<meta property="og:title" content="السوق العربي · Al Souq Al Arabi">
+<meta property="og:description" content="حمّل التطبيق من App Store أو Google Play">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Sans+Arabic:wght@300;400;500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F1E8; --surface:#FFFDF8; --ink:#16332F; --muted:#5E6E68;
+  --teal:#0F5E58; --gold:#B08A3E; --line:#E3DBC9;
+  --display:"Cormorant Garamond","Aref Ruqaa",Georgia,serif;
+  --body:"Jost","IBM Plex Sans Arabic",system-ui,-apple-system,"Segoe UI",sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1F1D; --surface:#152A27; --ink:#F1EBDD; --muted:#A9B5AE;
+    --teal:#2F8C82; --gold:#D4AF63; --line:#26403C;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1F1D; --surface:#152A27; --ink:#F1EBDD; --muted:#A9B5AE;
+  --teal:#2F8C82; --gold:#D4AF63; --line:#26403C;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%; scroll-padding-top:env(safe-area-inset-top,0px)}
+body{
+  margin:0; min-height:100%; background:var(--bg); color:var(--ink);
+  font-family:var(--body); line-height:1.7; -webkit-font-smoothing:antialiased;
+  display:flex;
+}
+.wrap{
+  width:100%; max-width:440px; margin:auto; padding:40px 24px;
+  text-align:center;
+}
+
+.emblem{width:132px; height:132px; margin:0 auto 26px}
+.emblem svg{width:100%; height:100%; display:block}
+
+h1{margin:0; font-weight:400; line-height:1.2}
+.ar-title{
+  display:block; font-family:"Aref Ruqaa",serif; font-weight:700;
+  font-size:clamp(2.6rem,11vw,3.3rem); color:var(--teal);
+}
+.en-title{
+  display:block; direction:ltr; margin-top:6px;
+  font-family:"Cormorant Garamond",Georgia,serif; font-style:italic; font-weight:500;
+  font-size:1.45rem; letter-spacing:.04em; color:var(--gold);
+}
+
+.rule{width:64px; height:1px; background:var(--gold); margin:24px auto; opacity:.7}
+
+.desc{margin:0 auto; max-width:30ch}
+.desc .ar{font-family:"IBM Plex Sans Arabic",sans-serif; font-size:1.08rem; font-weight:400}
+.desc .en{
+  display:block; direction:ltr; margin-top:6px;
+  font-family:"Jost",sans-serif; font-weight:300; font-size:.95rem; color:var(--muted);
+}
+
+.btns{display:grid; gap:12px; margin-top:34px}
+.btn{
+  display:flex; align-items:center; gap:14px; direction:ltr;
+  padding:14px 20px; border-radius:16px; text-decoration:none;
+  background:var(--ink); color:var(--bg); text-align:left;
+  transition:transform .12s ease;
+}
+.btn:active{transform:scale(.98)}
+.btn:focus-visible{outline:2px solid var(--gold); outline-offset:3px}
+.btn svg{width:28px; height:28px; flex:none}
+.btn .txt{flex:1; line-height:1.25}
+.btn .small{display:block; font-family:"Jost",sans-serif; font-weight:300; font-size:.78rem; opacity:.8}
+.btn .big{display:block; font-family:"Jost",sans-serif; font-weight:500; font-size:1.15rem; letter-spacing:.01em}
+.btn .arabic{
+  font-family:"IBM Plex Sans Arabic",sans-serif; font-weight:400; font-size:.9rem;
+  opacity:.85; direction:rtl;
+}
+
+footer{
+  margin-top:38px; direction:ltr;
+  font-family:"Cormorant Garamond",Georgia,serif; font-size:1rem; color:var(--muted);
+}
+footer b{font-weight:600; color:var(--ink)}
+
+@media (prefers-reduced-motion:no-preference){
+  .emblem .star{transform-origin:50% 50%; animation:bloom 1.6s cubic-bezier(.2,.8,.2,1) both}
+  @keyframes bloom{from{transform:rotate(-45deg) scale(.6); opacity:0}to{transform:none; opacity:1}}
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="emblem" aria-hidden="true">
+    <svg viewBox="0 0 100 100">
+      <g class="star">
+        <rect x="17" y="17" width="66" height="66" rx="5" fill="var(--teal)"/>
+        <rect x="17" y="17" width="66" height="66" rx="5" fill="var(--teal)" transform="rotate(45 50 50)"/>
+      </g>
+      <circle cx="50" cy="50" r="28" fill="none" stroke="var(--gold)" stroke-width="1.2"/>
+      <circle cx="50" cy="50" r="23" fill="none" stroke="var(--gold)" stroke-width=".6" opacity=".7"/>
+      <text x="50" y="58" text-anchor="middle" font-family="Aref Ruqaa, serif" font-weight="700" font-size="24" fill="#F5F1E8">س</text>
+    </svg>
+  </div>
+
+  <h1>
+    <span class="ar-title">السوق العربي</span>
+    <span class="en-title">Al Souq Al Arabi</span>
+  </h1>
+
+  <div class="rule"></div>
+
+  <p class="desc">
+    <span class="ar">المشاريع المنزلية والأعمال العربية في أمريكا، في مكان واحد</span>
+    <span class="en">Homemade businesses and Arab services across the US, in one place</span>
+  </p>
+
+  <div class="btns">
+    <a class="btn" href="https://apps.apple.com/app/id6797300610" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.5 2-3.6-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.8-3.5.8s-1.8-.8-3-.8C7 7.2 5.5 8.1 4.7 9.6c-1.7 2.9-.4 7.2 1.2 9.5.8 1.1 1.7 2.4 2.9 2.4s1.6-.8 3-.8 1.8.8 3 .8 2-1.2 2.8-2.3c.9-1.3 1.2-2.5 1.3-2.6-.1 0-2.5-1-2.5-4zM14.1 5.5c.6-.8 1.1-1.8 1-2.9-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.8 1 .1 2.1-.5 2.7-1.3z"/></svg>
+      <span class="txt"><span class="small">Download on the</span><span class="big">App Store</span></span>
+      <span class="arabic">آيفون</span>
+    </a>
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.mukhtar.alsouqalarabi" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 2.8v18.4c0 .4.4.6.7.4L20.3 12.4c.3-.2.3-.6 0-.8L4.7 2.4c-.3-.2-.7 0-.7.4z"/></svg>
+      <span class="txt"><span class="small">Get it on</span><span class="big">Google Play</span></span>
+      <span class="arabic">أندرويد</span>
+    </a>
+  </div>
+
+  <footer>by <b>MK Software</b></footer>
+</main>
+</body>
+</html>
